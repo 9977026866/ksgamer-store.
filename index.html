@@ -1,5 +1,6 @@
 
-  <!DOCTYPE html><html lang="en">
+ <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,8 +11,11 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #0d0d0d;
       color: #ffffff;
+      padding: 20px;
+    }
+    header {
       text-align: center;
-      padding: 30px;
+      margin-bottom: 30px;
     }
     h1 {
       font-size: 2.8em;
@@ -26,83 +30,110 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      margin-top: 40px;
     }
     .product {
-      background: #1a1a1a;
+      background-color: #1a1a1a;
       border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      padding: 16px;
+      box-shadow: 0 4px 12px rgba(0,255,204,0.2);
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.05);
     }
     .product img {
       width: 100%;
       height: 200px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 12px;
     }
     .product h3 {
-      color: #00ffcc;
-      font-size: 1.2em;
       margin: 10px 0;
+      font-size: 1.1em;
+      color: #00ffcc;
     }
     .product a {
-      display: inline-block;
-      background-color: #ff9900;
-      color: black;
-      padding: 10px 20px;
       text-decoration: none;
+      color: #000;
+      background: #00ffcc;
+      padding: 10px 16px;
+      display: inline-block;
+      margin-top: 10px;
       border-radius: 8px;
       font-weight: bold;
-      margin-top: 10px;
     }
-    .youtube {
+    .yt-link {
+      text-align: center;
       margin-top: 40px;
     }
-    .youtube a {
-      background: #00ffcc;
-      padding: 12px 24px;
-      color: #000;
-      text-decoration: none;
-      border-radius: 8px;
+    .yt-link a {
+      color: #ff9900;
       font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to KS Gamer Official Store</h1>
-  <p>Buy trending Free Fire gaming accessories & gear here!</p>  <div class="store">
+  <header>
+    <h1>KS Gamer Official Store</h1>
+    <p>Trending Free Fire Gaming Accessories & Gear</p>
+  </header>
+  <div class="store">
     <div class="product">
-      <img src="https://i.ibb.co/vdCN00k/freefire-controller.jpg" alt="Mobile Gaming Controller" />
-      <h3>Mobile Gaming Controller</h3>
+      <img src="https://m.media-amazon.com/images/I/71f4gVjPtWL.SX679.jpg" alt="Gaming Mouse Pad">
+      <h3>Free Fire Themed Gaming Mouse Pad</h3>
       <a href="https://amzn.to/3S6jQdu" target="_blank">Buy Now</a>
     </div>
     <div class="product">
-      <img src="https://i.ibb.co/M7N7zjJ/gaming-gloves.jpg" alt="Free Fire Gaming Gloves" />
-      <h3>Free Fire Gaming Gloves</h3>
+      <img src="https://m.media-amazon.com/images/I/41pBoz7x6BL.SX679.jpg" alt="Action Figure">
+      <h3>Free Fire Character Action Figure</h3>
       <a href="https://amzn.to/4kdCyM4" target="_blank">Buy Now</a>
     </div>
     <div class="product">
-      <img src="https://i.ibb.co/dKWbC2z/gaming-trigger.jpg" alt="Gaming Triggers" />
-      <h3>Gaming Triggers</h3>
+      <img src="https://m.media-amazon.com/images/I/61Y-9Tx5y1L.SX679.jpg" alt="Phone Grip">
+      <h3>Free Fire Phone Grip Stand</h3>
       <a href="https://amzn.to/4j7NlXr" target="_blank">Buy Now</a>
     </div>
     <div class="product">
-      <img src="https://i.ibb.co/f4cWkPK/gaming-headphones.jpg" alt="Gaming Headphones" />
-      <h3>Gaming Headphones</h3>
+      <img src="https://m.media-amazon.com/images/I/51zGJlSbOWL.SX679.jpg" alt="T-shirt">
+      <h3>Free Fire Printed T-shirt</h3>
       <a href="https://amzn.to/43c499K" target="_blank">Buy Now</a>
     </div>
     <div class="product">
-      <img src="https://i.ibb.co/58mhZC3/gaming-pad.jpg" alt="Mobile Gaming Pad" />
-      <h3>Mobile Gaming Pad</h3>
+      <img src="https://m.media-amazon.com/images/I/71VRZUDME-L.SX679.jpg" alt="Gaming Gloves">
+      <h3>Gaming Gloves for Mobile</h3>
       <a href="https://amzn.to/3FiN9GN" target="_blank">Buy Now</a>
     </div>
     <div class="product">
-      <img src="https://i.ibb.co/7SJ8Mnh/cooler.jpg" alt="Phone Cooler Fan" />
-      <h3>Phone Cooler Fan</h3>
+      <img src="https://m.media-amazon.com/images/I/71ReHXWcPfL.SX679.jpg" alt="Stickers">
+      <h3>Free Fire Sticker Pack</h3>
       <a href="https://amzn.to/4jTAhWH" target="_blank">Buy Now</a>
     </div>
-  </div>  <div class="youtube">
-    <a href="https://www.youtube.com/@KS___GAMER256" target="_blank">Visit Our YouTube Channel</a>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71gJruY4p6L.SX679.jpg" alt="Gaming Trigger">
+      <h3>Mobile Gaming Trigger for FF</h3>
+      <a href="https://amzn.to/45aYXW3" target="_blank">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71VYctuzZzL.SX679.jpg" alt="Keychain">
+      <h3>Free Fire Logo Keychain</h3>
+      <a href="https://amzn.to/4mj8gJP" target="_blank">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61DPJwL1aCL.SX679.jpg" alt="Gaming Headphone">
+      <h3>Gaming Headphone with Mic</h3>
+      <a href="https://amzn.to/430I5QG" target="_blank">Buy Now</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71f7o3YflBL.SX679.jpg" alt="Cooling Fan">
+      <h3>Mobile Cooling Fan for Gaming</h3>
+      <a href="https://amzn.to/4mjjnCr" target="_blank">Buy Now</a>
+    </div>
+  </div>
+  <div class="yt-link">
+    <p>Also, visit our YouTube channel:</p>
+    <a href="https://www.youtube.com/@KS___GAMER256" target="_blank">KS Gamer 256</a>
   </div>
 </body>
 </html>
